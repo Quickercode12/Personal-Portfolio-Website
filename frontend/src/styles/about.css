@@ -1,0 +1,311 @@
+.about_container {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  padding: 80px 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about_container_div {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+/* Section 1 */
+.div_01 h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  color: #0dcaf0;
+  text-align: center;
+}
+
+.div_01 p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.9;
+  text-align: center;
+}
+
+/* Section 2 */
+.div_02 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.div_02_left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.div_02_left p {
+  font-size: 0.9rem;
+  color: #0dcaf0;
+  letter-spacing: 1px;
+}
+
+.div_02_left h1 {
+  font-size: 2rem;
+  margin: 15px 0;
+  color: #ffffff;
+  line-height: 1.5;
+}
+
+.div_02_left h4,
+.div_02_left h3 {
+  font-weight: 400;
+  line-height: 2.1;
+  opacity: 0.85;
+}
+
+.div_02_left button {
+  background: #0dcaf0;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  margin-top: 25px;
+  margin-right: 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.div_02_left button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px hwb(205 12% 78% / 0.4);
+}
+
+.profile_image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0dcaf0;
+  animation: floatImage 4s ease-in-out infinite;
+  margin-left: 10rem;
+}
+
+/* Floating animation */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Section 3 - Skills Cards */
+/* Section Wrapper */
+.div_03 {
+  width: 100%;
+  padding: 40px 0;
+  cursor: pointer;
+}
+
+/* Heading */
+.div_03_div_skills {
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.div_03_div_skills h6 {
+  color: #76dfff;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Grid Layout */
+.div_03_div_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Card wrapper */
+.skill_card {
+  width: 260px;
+  height: 260px;
+}
+
+/* FLIP CARD */
+.flip-card {
+  width: 100%;
+  height: 100%;
+  perspective: 1200px;
+}
+
+.flip-card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s ease;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  transition: opacity 0.4s ease;
+}
+
+.flip-card:hover .flip-card-front {
+  opacity: 0; /* Hover par front text hide */
+}
+
+/* COMMON CARD DESIGN */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 18px;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 20px;
+  background: rgba(36, 129, 148, 0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(118, 223, 255, 0.3);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* FRONT STYLES */
+.flip-card-front i {
+  font-size: 3rem;
+  color: #76dfff;
+}
+
+.flip-card-front h1 {
+  font-size: 1.3rem;
+  color: white;
+  margin-top: 10px;
+}
+
+/* BACK STYLES */
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: rgba(14, 108, 122, 0.2);
+}
+
+.flip-card-back h2 {
+  color: #76dfff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.flip-card-back p {
+  color: white;
+  font-size: 1rem;
+}
+
+.div_04 {
+  width: 100%;
+  padding: 30px 0;
+}
+
+.div_04_div_skills {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.div_04_div_skills h6 {
+  font-size: 1.9rem;
+  color: hsl(194, 94%, 75%);
+  font-weight: 700;
+}
+
+.div_04_div_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 10px;
+}
+
+.project_card {
+  background: rgba(36, 129, 148, 0.1);
+  border-radius: 16px;
+  padding-bottom: 15px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: 0.3s ease;
+  cursor: pointer;
+  animation: fadeIn 0.6s ease;
+}
+
+.project_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.project_card_button_click {
+  border: none;
+  background-color: #0dcaf0;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.card_img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+  margin-bottom: 10px;
+}
+
+.project_card h1 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  font-weight: 600;
+  color: #000000;
+}
+
+.project_card p {
+  font-size: 0.95rem;
+  color: #ffffff;
+  padding: 0 10px 10px 10px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .div_04_div_container {
+    grid-template-columns: 1fr;
+  }
+}

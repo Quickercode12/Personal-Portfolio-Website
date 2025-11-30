@@ -1,0 +1,34 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+## README.md
+# Ignore README files in subdirectories
+**/README.md
+# But do not ignore the main README.md file
+!README.md
+# Ignore all markdown files in docs directories
+docs/**/*.md
+# But do not ignore the main docs directory

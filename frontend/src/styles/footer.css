@@ -1,0 +1,65 @@
+/* ==============================
+   Footer Styles
+   ============================== */
+
+:root {
+  /* 🎨 Change this to update color theme */
+  --main-color: #6c63ff;
+}
+
+.footer_container {
+  width: 100%;
+  background-color: #101a20;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer_container_div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ---------- SOCIAL ICONS ---------- */
+.footer_container_div_socials ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+
+.footer_container_div_socials ul li {
+  font-size: 1.3rem;
+  color: var(--main-color);
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer_container_div_socials ul li:hover {
+  color: white;
+  transform: scale(1.2);
+}
+
+/* ---------- TEXT ---------- */
+.footer_container p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 0;
+}
+
+.footer_container p:last-child {
+  font-size: 0.85rem;
+  color: var(--main-color);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .footer_container_div_socials ul {
+    gap: 1rem;
+  }
+}
