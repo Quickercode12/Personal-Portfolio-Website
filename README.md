@@ -1,95 +1,83 @@
-## website
+# Personal Portfolio Website
 
-## create frontend tool 
-    npm create vite@latest
+A clean and responsive personal portfolio website built to showcase the **Home**, **About**, **Projects**, and **Contact** sections — ideal for developers, designers, and students.
 
-Bahut accha choice 👏 — FolioOne (BootstrapMade) ek clean aur professional portfolio template hai.
-Agar tum is jaisa portfolio khud banana chahte ho, to neeche main batata hoon exact technology stack jo tumhe use karni chahiye 👇
+---
 
-💻 1. Core Technologies
-Purpose	Recommended Tech
-Frontend Framework	⚛️ React.js (or Vite + React for faster builds)
-Styling / UI	🎨 Bootstrap 5 + custom CSS/SASS
-Animations	✨ AOS (Animate on Scroll) or Framer Motion
-Icons	🧩 Bootstrap Icons or React Icons
-Routing	🌐 React Router DOM
-Deployment	🚀 Vercel or Netlify
-🧩 2. Structure Example
+## 📸 Project Screenshots
 
-Your folder structure can look like this:
+Here are some preview images of my Personal Portfolio Website:
 
-portfolio/
- ┣ src/
- ┃ ┣ components/
- ┃ ┃ ┣ Header.jsx
- ┃ ┃ ┣ HeroSection.jsx
- ┃ ┃ ┣ About.jsx
- ┃ ┃ ┣ Skills.jsx
- ┃ ┃ ┣ Portfolio.jsx
- ┃ ┃ ┣ Contact.jsx
- ┃ ┃ ┗ Footer.jsx
- ┃ ┣ App.jsx
- ┃ ┣ main.jsx
- ┃ ┗ styles/
- ┃   ┗ style.css
- ┣ public/
- ┃ ┗ images/
- ┣ package.json
- ┗ vite.config.js
+### 🏠 Home / Landing Page
+![Home Page](screenshots/Screenshot%202025-11-30%20231816.png)
 
-🎨 3. Design Technology
+### 👨‍💻 Projects Section
+![Projects Section](screenshots/Screenshot%202025-11-30%20232103.png)
 
-Use Bootstrap grid system for layout (like FolioOne)
+### 📂 About Section
+![About Section](screenshots/Screenshot%202025-11-30%20231927.png)
 
-Use CSS variables or SASS for consistent colors
+### 📱 Contact Section
+![Contact Section](screenshots/Screenshot%202025-11-30%20232045.png)
 
-Use AOS for smooth scroll animations:
+---
 
-npm install aos
+## 📝 About The Project
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+This portfolio website is designed to build a professional online presence and highlight my skills, work, and personal information.  
+It has a clean UI and responsive layout so visitors can easily navigate through different sections.
 
-useEffect(() => {
-  AOS.init({ duration: 1000, once: true });
-}, []);
+---
 
-📸 4. For the Portfolio Section
+## ✨ Features
 
-Use:
+- Fully responsive design  
+- Sections for **Home**, **About**, **Projects**, and **Contact**  
+- Clean & modern user interface  
+- Easy to customize and update  
+- Static HTML/CSS/JS setup for fast loading  
+- Compatible with GitHub Pages deployment  
 
-React components for each project card
+---
 
-Bootstrap Cards or custom divs with hover effects
+## 🛠️ Tech Stack
 
-Optional: React Modal for opening project details
+- **Frontend:** HTML, CSS, JavaScript  
+- **Styling:** Custom CSS  
+- **Icons:** React Icons / or Image Icons (if used)  
+- **Animations:** AOS (Animate On Scroll) (optional)  
+- **Deployment:** GitHub Pages  
 
-📬 5. Contact Form
+---
 
-If you only need email submission:
+## 🚀 Getting Started
 
-Use EmailJS (no backend needed)
+Follow these steps to run the project on your local machine.
 
-npm install emailjs-com
+### 📌 Prerequisites
 
+- A web browser (Chrome, Edge, Firefox)  
+- (Optional) VS Code or any code editor  
+- (Optional) Node.js (only required if using Live Server or npm commands)
 
-Or, if you want to add backend later, you can use Node.js + Express.
+---
 
-🌍 6. Hosting
+## 📥 Installation
 
-Once done:
+### 1️⃣ Clone the repository
 
-npm run build
+```bash
+git clone https://github.com/Quickercode12/Personal-Portfolio-Website.git
 
-Deploy to Vercel or Netlify
+``` 
 
-Both are free and perfect for portfolios.
+### 2️⃣ Navigate to the project folder
 
-🧠 Summary — Tech Stack You Should Use
+```bash
+cd Personal-Portfolio-Website
 
-✅ React (with Vite)
-✅ Bootstrap 5
-✅ AOS for animation
-✅ React Router
-✅ EmailJS for contact form
-✅ Vercel for deployment
+```
+
+## 📬 Contact
+
+If you want to reach out or give suggestions, feel free to connect via GitHub or email.
