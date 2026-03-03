@@ -1,9 +1,9 @@
 import React from "react";
 import userImage from "../assets/images/gautamImageOne.jpg";
 import projectOne from "../assets/images/food-delivery-service-design-vector.jpg";
-import projectTwo from "../assets/images/hotel management system image.webp";
-import projectThree from "../assets/images/the-ultimate-guide-to-chat-app-architecture.png";
-import projectFour from "../assets/images/e-commerse image.webp";
+import projectTwo from "../assets/images/Flight-Booking-Website.jpg";
+import projectThree from "../assets/images/Rasan card web application.jpg";
+import projectFour from "../assets/images/bank-management-software-500x500.webp";
 import "../styles/about.css";
 
 function About() {
@@ -190,8 +190,10 @@ function About() {
                 alt="Hotel Management"
                 className="card_img"
               />
-              <h1>Hotel Management System</h1>
-              <p>Manages rooms, bookings, customers and staff.</p>
+              <h1>Airline-Booking-Application</h1>
+              <p>
+                booking,Searching, and Managing airline reservations with a user-friendly interface.
+              </p>
               <button
                 className="project_card_button_click"
                 onClick={() => handleSubmit(5)}
@@ -202,8 +204,10 @@ function About() {
 
             <div className="project_card">
               <img src={projectThree} alt="Chat App" className="card_img" />
-              <h1>Real-Time Chat Application</h1>
-              <p>Fast live messaging using WebSocket.</p>
+              <h1>Rasan Card System</h1>
+              <p>
+                User Features, Ration Shop Dealer Features,Government Admin Features
+              </p>
               <button
                 className="project_card_button_click"
                 onClick={() => handleSubmit(3)}
@@ -213,8 +217,8 @@ function About() {
             </div>
             <div className="project_card">
               <img src={projectFour} alt="E-Commerce" className="card_img" />
-              <h1>E-Commerce Application</h1>
-              <p>Complete shopping website with payments.</p>
+              <h1>Bank Management System</h1>
+              <p>Complete banking system with account management and transactions.</p>
               <button
                 className="project_card_button_click"
                 onClick={() => handleSubmit(6)}
