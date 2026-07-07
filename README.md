@@ -10,19 +10,19 @@ Here are some preview images of my Personal Portfolio Website:
 
 ### 🏠 Home / Landing Page
 
-![Home Page](screenshots/Screenshot%202025-11-30%20231816.png)
+![Home Page](screenshots/Screenshot%202026-07-07%20135834.png)
 
 ### 👨‍💻 Projects Section
 
-![Projects Section](screenshots/Screenshot%202026-03-03%20200225.png)
+![Projects Section](screenshots/Screenshot%202026-07-07%20135851.png)
 
 ### 📂 About Section
 
-![About Section](screenshots/Screenshot%202025-11-30%20231927.png)
+![About Section](screenshots/Screenshot%202026-07-07%20135906.png)
 
 ### 📱 Contact Section
 
-![Contact Section](screenshots/Screenshot%202025-11-30%20232045.png)
+![Contact Section](screenshots/Screenshot%202026-07-07%20135923.png)
 
 ---
 

@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  FaInstagram,
+  FaGithub,
   FaFacebookF,
   FaTwitter,
   FaLinkedinIn,
@@ -15,7 +15,7 @@ function Footer() {
         <div className="footer_container_div_socials">
           <ul>
             <li>
-              <FaInstagram />
+              <FaGithub />
             </li>
             <li>
               <FaLinkedinIn />
@@ -28,7 +28,7 @@ function Footer() {
             </li>
           </ul>
         </div>
-        <p>Designed by Gautam Sharma</p>
+        <p>Designed by Gautam Gaur</p>
       </div>
     </div>
   );

@@ -12,6 +12,7 @@ function Contact() {
     message: "",
   });
   const [responseMsg, setResponseMsg] = useState("");
+  const API_URL = import.meta.env.VITE_API_URL || "/api";
 
   const handleChange = async (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,10 +22,7 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault(); // page reload roko
     try {
-      const res = await axios.post(
-        "http://localhost:4000/api/contact",
-        formData
-      );
+      const res = await axios.post(`${API_URL}/contact`, formData);
       setResponseMsg(res.data.message);
       setFormData({ name: "", email: "", subject: "", message: "" }); // reset form
     } catch (err) {

@@ -1,5 +1,5 @@
 import React from "react";
-import userImage from "../assets/images/gautamImageOne.jpg";
+import userImage from "../assets/images/Photo.jpg";
 import "../styles/home.css";
 import { ReactTyped } from "react-typed";
 

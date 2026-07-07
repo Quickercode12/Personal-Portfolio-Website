@@ -1,9 +1,9 @@
 import React from "react";
-import userImage from "../assets/images/gautamImageOne.jpg";
+import userImage from "../assets/images/Photo.jpg";
 import projectOne from "../assets/images/food-delivery-service-design-vector.jpg";
 import projectTwo from "../assets/images/Flight-Booking-Website.jpg";
-import projectThree from "../assets/images/Rasan card web application.jpg";
-import projectFour from "../assets/images/bank-management-software-500x500.webp";
+import resumePdf from "../assets/images/Gautam-Gaur.pdf";
+
 import "../styles/about.css";
 
 function About() {
@@ -14,13 +14,12 @@ function About() {
     if (sectionId === 2) {
       // 👉 This block will run when user clicks "Download Resume"
 
-      const resumeUrl = "../assets/images/Gautam Gaur (1).pdf";
-
-      // Force download
       const link = document.createElement("a");
-      link.href = resumeUrl;
-      link.download = "Gautam Gaur (1).pdf";
+      link.href = resumePdf;
+      link.download = "Gautam-Gaur.pdf";
+      document.body.appendChild(link);
       link.click();
+      document.body.removeChild(link);
     } else if (sectionId === 1) {
       // 👉 This block will run when user clicks "Top Skills"
 
@@ -46,22 +45,6 @@ function About() {
       link.href = url;
       link.target = "_blank";
       link.click();
-    } else if (sectionId === 5) {
-      // 👉 This block will run when user clicks "View My Work"
-      const url = "https://github.com/Quickercode12/Hotel-Management-";
-
-      const link = document.createElement("a");
-      link.href = url;
-      link.target = "_blank";
-      link.click();
-    } else if (sectionId === 6) {
-      // 👉 This block will run when user clicks "View My Work"
-      const url = "https://github.com/Quickercode12/e-commerce-website";
-
-      const link = document.createElement("a");
-      link.href = url;
-      link.target = "_blank";
-      link.click();
     }
   };
   return (
@@ -72,7 +55,7 @@ function About() {
           <p>
             I’m Gautam Gaur, a Software Developer from Rajasthan, currently
             living in Hyderabad. <br></br>I specialize in the MERN stack and
-            have built projects like a Real-Time chat application and a food
+            have built projects like a Air line wen application and a food
             delivery app.<br></br> I love learning new technologies, solving
             coding problems, and creating clean, user-friendly applications.
           </p>
@@ -85,7 +68,7 @@ function About() {
               digital journeys
             </h1>
             <h4>
-              I am a dedicated software developer who enjoys building clean,
+              I am a dedicated Software Developer who enjoys building clean,
               efficient, and user-friendly applications. I work across both
               frontend and backend technologies and love solving real-world
               problems through code. Every day, My aim to learn, improve, and
@@ -130,7 +113,8 @@ function About() {
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
                     <i className="fas fa-brain"></i>
-                    <h1>AI + Cybersecurity</h1>
+                    <h1>AI + Cybersecurity </h1>
+                    <p>Pending</p>
                   </div>
 
                   <div className="flip-card-back">
@@ -192,36 +176,12 @@ function About() {
               />
               <h1>Airline-Booking-Application</h1>
               <p>
-                booking,Searching, and Managing airline reservations with a user-friendly interface.
+                booking,Searching, and Managing airline reservations with a
+                user-friendly interface.
               </p>
               <button
                 className="project_card_button_click"
                 onClick={() => handleSubmit(5)}
-              >
-                Click
-              </button>
-            </div>
-
-            <div className="project_card">
-              <img src={projectThree} alt="Chat App" className="card_img" />
-              <h1>Rasan Card System</h1>
-              <p>
-                User Features, Ration Shop Dealer Features,Government Admin Features
-              </p>
-              <button
-                className="project_card_button_click"
-                onClick={() => handleSubmit(3)}
-              >
-                Click
-              </button>
-            </div>
-            <div className="project_card">
-              <img src={projectFour} alt="E-Commerce" className="card_img" />
-              <h1>Bank Management System</h1>
-              <p>Complete banking system with account management and transactions.</p>
-              <button
-                className="project_card_button_click"
-                onClick={() => handleSubmit(6)}
               >
                 Click
               </button>

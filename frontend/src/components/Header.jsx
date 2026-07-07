@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/header.css";
 import { Link } from "react-router-dom";
-import { FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 
 function Header() {
@@ -29,9 +29,9 @@ function Header() {
         <div className="header_container_div2">
           <ul>
             <li>
-              <FaInstagram
+              <FaGithub
                 onClick={() => {
-                  onlinkClick("######");
+                  onlinkClick("https://github.com/Quickercode12");
                 }}
               />
             </li>
